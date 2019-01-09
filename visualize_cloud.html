@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Web_Visualization_Dashboard_Latitude_JMF</title>
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> -->
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+  <header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="land.html">
+            <div>Latittude</div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div style="float:right;" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="visualize_maxtemp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="visualize_humi.html">Humidity</a>
+                  <a class="dropdown-item" href="visualize_cloud.html">Cloudiness</a>
+                  <a class="dropdown-item" href="visualize_wind.html">Wind Speed</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+  </header>
+  
+  <style>
+    .navbar {
+      width: 100%;
+    }
+  
+    .navbar-brand {
+      flex-grow: 1;
+    }
+  
+    .navbar-collapse {
+      flex-grow: 0;
+    }
+    
+    .navbar li {
+      padding: 0;
+    }
+  
+    .navbar-light {
+      background-color: white !important; 
+    }
+  
+    .navbar-brand > div {
+      width: 150px;
+      text-align: center;
+      background-color: turquoise;
+      color: white;
+      padding: 10px;
+    }
+  
+  </style>
+
+    <div class="content">
+        <section class="content-left">
+          <div class="card bg-white text-blue">
+            <div class="card-body">
+                <h1 class="card-title">Cloudiness</h1>
+                <hr/>
+                <p class="card-text"><img src="Fig3.png" alt="Your Name" width="350"></p>
+                <p> It was not possible to draw any meaningful conclusions from the relationship between City Latitude and Cloudiness.
+                  </p>
+            </div>
+          </div>
+        </section>
+        <section class="content-right">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Visualization</h3>
+                <hr/>
+                <p class="card-text">
+                    <a href="visualize_maxtemp.html"><img src="Fig1.png"  alt="Your Name" Width = "200"></a>
+                    <a href="visualize_humi.html"><img src="Fig2.png" alt="Your Name" Width = "200"></a>
+                    <a href="visualize_cloud.html"><img src="Fig3.png"  alt="Your Name" Width = "200"></a>
+                    <a href="visualize_wind.html"><img src="Fig4.png" alt="Your Name" Width = "200"></a>
+                  </p>
+                </div>
+              </div>
+        </section>
+        </div>
+
+        <style>
+            body {
+              margin: 0;
+              border: 0;
+              padding: 0;
+            }
+    
+              .page-title {
+          display: inline-block;
+          color: white;
+          background-color: turquoise;
+          width: 300px;
+          height: 200px;
+        }
+        
+        .card-title {
+          color: turquoise;
+        }
+        
+        .content {
+          clear: float;
+          /* overflow: hidden; */
+          background-color: lightgrey;
+          /* padding: 20px; */
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+        
+        section {
+          margin: 10px;
+          flex-grow: 1;
+          background: white;
+          padding: 15pt;
+        }
+        
+        .content-left {
+          flex-basis: 60%;
+        }
+        
+        .content-right {
+          flex-basis: 35%;
+        }
+        
+        body {
+          margin: 0;
+          padding: 0;
+          border: 0;
+        }
+    
+        .card-title { 
+          text-align: left; 
+          border-radius: 10px; 
+          padding: 15px;
+          display: block; 
+        }
+    
+        hr {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    /* .navbar {
+        position: relative;
+        min-height: 30px;
+        margin-bottom: 0%;
+    } */
+          </style>
+
+</body>
+
+</html>
